@@ -1,0 +1,55 @@
+
+SimulationType                MonteCarlo
+NumberOfCycles                4000
+NumberOfInitializationCycles  1000
+PrintEvery                    200
+
+ChargeMethod                  Ewald
+CutOff                        12.0
+Forcefield                    SensorArrayParams-alcohols
+EwaldPrecision                1e-6
+
+Framework 0
+FrameworkName ZIF-8_v2_EQeq
+UnitCells 2 2 2
+HeliumVoidFraction 0.81
+UseChargesFromCIFFile yes
+ExternalTemperature 298.0
+ExternalPressure 1E5
+
+    Component 0 MoleculeName              CO2
+                 MoleculeDefinition         TraPPE-Zhang
+                 MolFraction                1e-06
+                 TranslationProbability     0.5
+                 RegrowProbability          0.5
+                 IdentityChangeProbability  1.0
+                   NumberOfIdentityChanges  2
+                   IdentityChangesList      0 1
+                 SwapProbability            1.0
+                 CreateNumberOfMolecules    0
+
+                 
+    Component 1 MoleculeName              O2
+                 MoleculeDefinition         TraPPE-Zhang
+                 MolFraction                0.1999998
+                 TranslationProbability     0.5
+                 RegrowProbability          0.5
+                 IdentityChangeProbability  1.0
+                   NumberOfIdentityChanges  2
+                   IdentityChangesList      0 1
+                 SwapProbability            1.0
+                 CreateNumberOfMolecules    0
+
+                 
+    Component 2 MoleculeName              N2
+                 MoleculeDefinition         TraPPE-Zhang
+                 MolFraction                0.7999992
+                 TranslationProbability     0.5
+                 RegrowProbability          0.5
+                 IdentityChangeProbability  1.0
+                   NumberOfIdentityChanges  2
+                   IdentityChangesList      0 1
+                 SwapProbability            1.0
+                 CreateNumberOfMolecules    0
+
+                 
