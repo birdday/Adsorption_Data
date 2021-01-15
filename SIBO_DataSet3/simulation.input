@@ -1,0 +1,89 @@
+SimulationType                MonteCarlo
+NumberOfCycles                5000
+NumberOfInitializationCycles  1000
+PrintEvery                    500
+
+ChargeMethod                  Ewald
+CutOff                        12.0
+Forcefield                    SensorArrayParams-alcohols
+EwaldPrecision                1e-6
+
+Framework 0
+FrameworkName HKUST-1_v2_EQeq
+UnitCells 1 1 1
+HeliumVoidFraction 0.81
+UseChargesFromCIFFile yes
+ExternalTemperature 298.0
+ExternalPressure 1E5
+
+Component 0 MoleculeName              O2
+             MoleculeDefinition         TraPPE-Zhang
+             MolFraction                0.15
+             TranslationProbability     0.5
+             RegrowProbability          0.5
+             IdentityChangeProbability  1.0
+               NumberOfIdentityChanges  2
+               IdentityChangesList      0 1
+             SwapProbability            1.0
+             CreateNumberOfMolecules    0
+
+
+Component 1 MoleculeName              CO2
+             MoleculeDefinition         TraPPE-Zhang
+             MolFraction                0.02
+             TranslationProbability     0.5
+             RegrowProbability          0.5
+             IdentityChangeProbability  1.0
+               NumberOfIdentityChanges  2
+               IdentityChangesList      0 1
+             SwapProbability            1.0
+             CreateNumberOfMolecules    0
+
+
+Component 2 MoleculeName              H2
+             MoleculeDefinition         TraPPE-Zhang
+             MolFraction                0.0
+             TranslationProbability     0.5
+             RegrowProbability          0.5
+             IdentityChangeProbability  1.0
+               NumberOfIdentityChanges  2
+               IdentityChangesList      0 1
+             SwapProbability            1.0
+             CreateNumberOfMolecules    0
+
+
+Component 3 MoleculeName              CH4
+             MoleculeDefinition         TraPPE-Zhang
+             MolFraction                0.0
+             TranslationProbability     0.5
+             RegrowProbability          0.5
+             IdentityChangeProbability  1.0
+               NumberOfIdentityChanges  2
+               IdentityChangesList      0 1
+             SwapProbability            1.0
+             CreateNumberOfMolecules    0
+
+
+Component 4 MoleculeName              H2S
+             MoleculeDefinition         TraPPE-Zhang
+             MolFraction                0.0
+             TranslationProbability     0.5
+             RegrowProbability          0.5
+             IdentityChangeProbability  1.0
+               NumberOfIdentityChanges  2
+               IdentityChangesList      0 1
+             SwapProbability            1.0
+             CreateNumberOfMolecules    0
+
+
+Component 5 MoleculeName              N2
+             MoleculeDefinition         TraPPE-Zhang
+             MolFraction                0.8300000000000001
+             TranslationProbability     0.5
+             RegrowProbability          0.5
+             IdentityChangeProbability  1.0
+               NumberOfIdentityChanges  2
+               IdentityChangesList      0 1
+             SwapProbability            1.0
+             CreateNumberOfMolecules    0
+
